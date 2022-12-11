@@ -3,7 +3,6 @@
   background-size: cover;
   height: 700px;
   background-repeat: no-repeat;
-  background-size: cover;
   padding-top: 24px;
   position: relative;
 }
@@ -16,10 +15,9 @@
 }
 
 .socials__list {
-  margin-top: 176px;
-  // margin-left: 1300px;
   position: absolute;
   right: 164px;
+  top: 220px;
 }
 
 .socials__item {
