@@ -1,10 +1,10 @@
-header .container{
+header .container {
   display: flex;
 }
 
-.header__logo{
+.header__logo {
   width: 244px;
-  margin-top: 24px;
+  margin-left: 164px;
 }
 
 .switch {
@@ -17,7 +17,7 @@ header .container{
 }
 
 .switch input {
-  display:none;
+  display: none;
 }
 
 .slider {
@@ -27,9 +27,10 @@ header .container{
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  background-color: transparent;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border: 1px solid white;
 }
 
 .slider:before {
@@ -39,17 +40,18 @@ header .container{
   width: 12px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  top: 3px;
+  background-color: #36526A;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: transparent;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #2196f3;
 }
 
 input:checked + .slider:before {
@@ -66,30 +68,26 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-.header__language{
+.header__language {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 640px;
+  position: absolute;
+  top: 24px;
+  right: 164px;
 }
 
-.eng{
+.eng {
   font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-color: #FFFFFF;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
 }
 
-.uk{
+.uk {
   font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-color: #FFFFFF;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
 }
 
-.background__image{
-  background-image: url(../../images/bacground-hero.png);
-  width: 1360px;
-  height: 700px;
-  background-repeat: no-repeat;
-}

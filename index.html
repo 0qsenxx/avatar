@@ -1,32 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Headland+One&family=Inter&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Headland+One&family=Inter&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/main.min.css"/>
-</head>
-<body>
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <div class="background__image">
-            <img src="./images/header-logo.png" class="header__logo"/>
-            <div class="header__language">
-            <p class="eng">ENG</p>
-            <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-              </label>
-              <p class="uk">UK</p>
-            </div>
-            </div>
+      <div class="background__image">
+        <img src="./images/header-logo.png" class="header__logo" />
+        <div class="header__language">
+          <p class="eng">ENG</p>
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+          <p class="uk">UK</p>
         </div>
+        <img src="./images/avatar.png" class="hero__avatar" />
+        <ul class="socials__list">
+          <li class="socials__item">
+            <a class="socials__link">
+            <svg width="34px" height="30px">
+              <use href="./images/symbol-defs.svg#icon-inst-1"></use>
+            </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link">
+            <svg width="34px" height="30px">
+              <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
+            </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link">
+            <svg width="34px" height="30px">
+              <use href="./images/symbol-defs.svg#icon-youtube-1"></use>
+            </svg>
+            </a>
+          </li>
+        </ul>
+        <ul class="text__list">
+          <li class="text__item">
+            <p>
+              Oe perlltxe hu tsamsiyu! Ngari hu Eywa salew tirea, tokx 'ì'awn
+              slu Na'viyä hapxì. Säwem nìayoeng!
+            </p>
+          </li>
+          <li class="text__item">
+            <p>
+              Хоробрий воїне, звертаюсь до тебе! Твій дух йде з Ейвою, твоє тіло
+              залишається, щоб стати частиною Народу. Борись разом з нами!
+            </p>
+          </li>
+        </ul>
+        <button class="hero__btn">
+            Приєднатися до клану
+        </button>
+      </div>
     </header>
-</body>
+  </body>
 </html>

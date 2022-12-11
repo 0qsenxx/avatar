@@ -1,59 +1,87 @@
-.hero {
-  height: 400px;
-  background-color: #2f303a;
-  text-align: center;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-bottom: 118px;
-  padding-top: 118px;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../../images/background-hero.jpg);
+.background__image {
+  background: url(../../images/bacground-hero.png) no-repeat center center fixed;
+  background-size: cover;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 24px;
+  position: relative;
+}
 
-  @media screen and (min-width: 768px) {
-    padding-right: 204px;
-    padding-left: 204px;
-  }
+.hero__avatar {
+  position: absolute;
+  width: 717px;
+  top: 100px;
+  right: 103px;
+}
 
-  @media screen and (min-width: 1200px) {
-    height: 600px;
-    padding-bottom: 200px;
-    padding-top: 200px;
-    padding-left: 430px;
-    padding-right: 430px;
+.socials__list {
+  margin-top: 176px;
+  // margin-left: 1300px;
+  position: absolute;
+  right: 164px;
+}
+
+.socials__item {
+  fill: #fff;
+  margin-top: 20px;
+
+  &:first-child {
+    margin-top: 0;
   }
 }
 
-.hero__title {
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin-bottom: 30px;
+.text__list{
+  margin-left: 165px;
+  margin-top: 230px;
+}
 
-  @media screen and (min-width: 1200px) {
-    font-size: 44px;
-    line-height: 60px;
+.text__item {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  width: 376px;
+
+  &:first-child::after{
+    content: '';
+    background-image: url(../../images/Rectangle48.png);
+    width: 152px;
+    height: 40px;
+    display: block;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    fill: #fff;
+    margin-left: 92px;
   }
 }
 
-.hero__btn {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.8em;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  background-color: #2196f3;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 24px;
-  padding-right: 24px;
-  border: none;
-  border-radius: 4px;
-  /* pointer-events: none; */
+.hero__btn{
+  width: 260px;
+  height: 80px;
+  font-family: 'HeadlandOne';
+font-weight: 400;
+font-size: 24px;
+line-height: 30px;
+text-align: center;
+color: #26C7EA;
+background-color: #0B0E66;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 31px;
+padding-right: 30px;
+border: 3px solid #26C7EA;
+border-radius: 45px 0px;
+margin-top: 45px;
+margin-left: 164px;
+}
+
+.socials__link{
+  animation-timing-function: cubic-bezier(0.01, -0.01, 0.55, 1);
+transition-duration: 250ms;
+transition-delay: 50ms;
+
+&:hover{
+  fill: #26C7EA;
+}
 }
