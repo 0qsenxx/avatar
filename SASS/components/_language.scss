@@ -1,0 +1,90 @@
+.language {
+  padding-top: 33px;
+  padding-bottom: 40px;
+  background-image: url(../../images/Rectangle20.png);
+  background-size: cover;
+  height: 664px;
+  padding-left: 166px;
+  padding-right: 162px;
+}
+
+.language__title {
+  font-family: "HeadlandOne";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  color: #1f2426;
+}
+
+.language-card__list{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.language-card__item {
+  width: 320px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding-top: 36px;
+  padding-bottom: 36px;
+  margin-top: 47px;
+  margin-right: 35px;
+
+  &:first-child{
+    margin-bottom: 24px;
+  }
+
+  &:nth-child(2){
+    margin-bottom: 24px;
+  }
+
+  &:nth-child(3){
+    margin-bottom: 24px;
+    margin-right: 0;
+  }
+
+  &:nth-child(4){
+    margin-top: 0;
+  }
+
+  &:nth-child(5){
+    margin-top: 0;
+  }
+
+  &:nth-child(6){
+    margin-top: 0;
+    margin-right: 0;
+  }
+}
+
+.language-card__title {
+  font-family: "HeadlandOne";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.language-card__description {
+  font-family: "HeadlandOne";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  margin-top: 40px;
+}
+
+.language-card__img{
+  width: 152px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}

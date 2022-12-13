@@ -68,7 +68,7 @@
             </p>
           </li>
         </ul>
-        <button type="button" class="hero__btn">
+        <button type="button" class="hero__btn" data-open-modal>
             Приєднатися до клану
         </button>
       </section>
@@ -85,5 +85,121 @@
         </h2>
         <img src="./images/Rectangle8.png" class="prediction__img"/>
       </section>
+      <section class="trailer">
+        <button class="trailer__button" type="button">
+          Дивитись трейлер
+        </button>
+      </section>
+      <section class="prediction">
+        <h2 class="prediction__title">
+          “ВСЯ ЕНЕРГІЯ ЛИШЕ ЗАПОЗИЧЕНА, ОДНОГО ДНЯ
+        </h2>
+        <h2 class="prediction__title">
+          ЇЇ ДОВЕДЕТЬСЯ ПОВЕРНУТИ.”
+        </h2>
+        <h2 class="prediction__description">
+          Джейк Саллі
+        </h2>
+        <img src="./images/Rectangle8.png" class="prediction__img"/>
+      </section>
+      <section class="language">
+        <h2 class="language__title">
+          Вчимо мову На’ві
+        </h2>
+        <ul class="language-card__list">
+          <li class="language-card__item">
+            <h2 class="language-card__title">
+              Привіт
+            </h2>
+            <img src="./images/Rectangle42.png" class="language-card__img"/>
+            <p class="language-card__description">
+              Kaltxì
+            </p>
+          </li>
+            <li class="language-card__item">
+              <h2 class="language-card__title">
+                Як справи?
+              </h2>
+              <img src="./images/Rectangle8.png" class="language-card__img"/>
+              <p class="language-card__description">
+                Ngaru lu fpom srak?
+              </p>
+          </li>
+         <li class="language-card__item">
+          <h2 class="language-card__title">
+            Все добре
+          </h2>
+          <img src="./images/Rectangle 45.png" class="language-card__img"/>
+          <p class="language-card__description">
+            Lu fpom
+          </p>
+        </li>
+        <li class="language-card__item">
+        <h2 class="language-card__title">
+          Дякую
+        </h2>
+        <img src="./images/Rectangle42.png" class="language-card__img"/>
+        <p class="language-card__description">
+          Irayo si 
+        </p>
+        </li>
+         <li class="language-card__item">
+          <h2 class="language-card__title">
+            Я бачу тебе
+          </h2>
+          <img src="./images/Rectangle8.png" class="language-card__img"/>
+          <p class="language-card__description">
+            Oel ngati kameie
+          </p>
+        </li>
+         <li class="language-card__item">
+          <h2 class="language-card__title">
+            Слідуй за мною!
+          </h2>
+          <img src="./images/Rectangle 45.png" class="language-card__img"/>
+          <p class="language-card__description">
+            Nong oet!
+          </p>
+        </li>
+        </ul>
+      </section>
+      <section class="prediction">
+        <h2 class="prediction__title">
+          “НАША ВЕЛИКА МАТИ НЕ СТАЄ НА ЯКУСЬ СТОРОНУ,
+        </h2>
+        <h2 class="prediction__title">
+          ВОНА ЗАХИЩАЄ ЛИШЕ ЖИТТЄВИЙ БАЛАНС.”
+        </h2>
+        <h2 class="prediction__description">
+          Нейтірі
+        </h2>
+        <img src="./images/Rectangle8.png" class="prediction__img"/>
+      </section>
+      <footer class="footer">
+      </footer>
+
+      <div class="backdrop is-hidden" data-backdrop>
+        <div class="modal">
+        </div>
+      </div>
+      <script>
+        const refs = {
+          openModalBtn: document.querySelector('[data-open-modal]'),
+          closeModalBtn: document.querySelector('[data-close-modal]'),
+          backdrop: document.querySelector('[data-backdrop]'),
+        };
+  
+        refs.openModalBtn.addEventListener('click', toggleModal);
+        refs.closeModalBtn.addEventListener('click', toggleModal);
+  
+        refs.backdrop.addEventListener('click', logBackdropClick);
+        function toggleModal() {
+          refs.backdrop.classList.toggle('is-hidden');
+        }
+  
+        function logBackdropClick() {
+          console.log('Це клік в бекдроп');
+        }
+      </script>
   </body>
 </html>
